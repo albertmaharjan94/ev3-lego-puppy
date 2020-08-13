@@ -1,0 +1,87 @@
+{
+  "interactionModel": {
+      "languageModel": {
+          "invocationName": "lego puppy",
+          "intents": [
+              {
+                  "name": "AMAZON.CancelIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.HelpIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.StopIntent",
+                  "samples": [
+                      "finish",
+                      "ciao",
+                      "bye",
+                      "stop"
+                  ]
+              },
+              {
+                  "name": "AMAZON.NavigateHomeIntent",
+                  "samples": []
+              },
+              {
+                  "name": "SetCommandIntent",
+                  "slots": [
+                      {
+                          "name": "Command",
+                          "type": "CommandType"
+                      }
+                  ],
+                  "samples": [
+                      "puppy {Command}",
+                      "bipaash {Command}",
+                      "bipash {Command}",
+                      "beepash {Command}"
+                  ]
+              }
+          ],
+          "types": [
+              {
+                  "name": "CommandType",
+                  "values": [
+                      {
+                          "name": {
+                              "value": "speak"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "heel"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "go back"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "come to me"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "come"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "stay"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "sit"
+                          }
+                      }
+                  ]
+              }
+          ]
+      }
+  }
+}
